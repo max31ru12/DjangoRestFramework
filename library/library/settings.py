@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # My
     "authors",
     "users",
+    "project_todo",
 ]
 
 MIDDLEWARE = [

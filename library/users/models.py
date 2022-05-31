@@ -9,7 +9,7 @@ class User(models.Model):
     email = models.CharField(
         max_length=64,
         unique=True
-        # Решил не делать через emailField
+        
     )
     user_name = models.CharField("username", max_length=64)
 
