@@ -24,7 +24,7 @@ class ToDo(models.Model):
     
     date_created = models.DateTimeField(default=datetime.now)
     date_updated = models.DateTimeField(default=datetime.now)
-    note_creator = models.CharField('Creater username', max_length=128 ,default=User)
+    note_creator = models.ManyToManyField("users.User")
 
 
 
