@@ -25,7 +25,7 @@ class ToDo(models.Model):
     date_created = models.DateTimeField(default=datetime.now)
     date_updated = models.DateTimeField(default=datetime.now)
     note_creator = models.ManyToManyField("users.User")
-
+    is_active = models.BooleanField(default=True)
 
 
 
